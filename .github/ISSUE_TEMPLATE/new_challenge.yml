@@ -1,0 +1,24 @@
+name: "📥 Propose a New Challenge"
+description: Suggest a fresh problem for the club
+labels: ["proposal"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Challenge Title
+      placeholder: e.g. Two Sum
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options: [Easy, Medium, Hard]
+  - type: textarea
+    id: statement
+    attributes:
+      label: Problem Statement
+      placeholder: Full description & examples
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      placeholder: e.g. 1 ≤ n ≤ 10⁵
